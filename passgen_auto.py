@@ -4,9 +4,11 @@ chars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', '
 num_chars = int(input("How many characters would you like password to be: "))
 
 pass_list = []
+
 for _ in range(num_chars):
 	rand_chars = random.choice(chars)
 	pass_list.append(rand_chars)
+	
 random.shuffle(pass_list)
 password = "".join(pass_list)
 print(f"Here is your password: {password}")
